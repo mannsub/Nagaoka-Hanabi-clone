@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		67FB8EA92D09EF9C0048994E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EA82D09EF9C0048994E /* AppDelegate.swift */; };
 		67FB8EAB2D09EF9C0048994E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EAA2D09EF9C0048994E /* SceneDelegate.swift */; };
-		67FB8EAD2D09EF9C0048994E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EAC2D09EF9C0048994E /* ViewController.swift */; };
-		67FB8EB02D09EF9C0048994E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FB8EAE2D09EF9C0048994E /* Main.storyboard */; };
 		67FB8EB22D09EFA10048994E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67FB8EB12D09EFA10048994E /* Assets.xcassets */; };
 		67FB8EB52D09EFA10048994E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FB8EB32D09EFA10048994E /* LaunchScreen.storyboard */; };
+		67FB8EBE2D09FBBE0048994E /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EBD2D09FBBE0048994E /* MainTabController.swift */; };
+		67FB8EC02D09FFCD0048994E /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EBF2D09FFCD0048994E /* NewsController.swift */; };
+		67FB8EC22D09FFFB0048994E /* PamphletController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EC12D09FFFB0048994E /* PamphletController.swift */; };
+		67FB8EC42D0A00410048994E /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EC32D0A00410048994E /* NotificationsController.swift */; };
+		67FB8EC62D0A00670048994E /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EC52D0A00660048994E /* SettingController.swift */; };
+		67FB8EC82D0A02E60048994E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EC72D0A02E60048994E /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67FB8EA52D09EF9C0048994E /* Nagaoka-Hanabi-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nagaoka-Hanabi-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FB8EA82D09EF9C0048994E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67FB8EAA2D09EF9C0048994E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		67FB8EAC2D09EF9C0048994E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		67FB8EAF2D09EF9C0048994E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67FB8EB12D09EFA10048994E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67FB8EB42D09EFA10048994E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67FB8EB62D09EFA10048994E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67FB8EBD2D09FBBE0048994E /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		67FB8EBF2D09FFCD0048994E /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
+		67FB8EC12D09FFFB0048994E /* PamphletController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PamphletController.swift; sourceTree = "<group>"; };
+		67FB8EC32D0A00410048994E /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
+		67FB8EC52D0A00660048994E /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		67FB8EC72D0A02E60048994E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,27 @@
 		67FB8EA72D09EF9C0048994E /* Nagaoka-Hanabi-clone */ = {
 			isa = PBXGroup;
 			children = (
+				67FB8EBC2D09FB690048994E /* Controller */,
 				67FB8EA82D09EF9C0048994E /* AppDelegate.swift */,
 				67FB8EAA2D09EF9C0048994E /* SceneDelegate.swift */,
-				67FB8EAC2D09EF9C0048994E /* ViewController.swift */,
-				67FB8EAE2D09EF9C0048994E /* Main.storyboard */,
 				67FB8EB12D09EFA10048994E /* Assets.xcassets */,
 				67FB8EB32D09EFA10048994E /* LaunchScreen.storyboard */,
 				67FB8EB62D09EFA10048994E /* Info.plist */,
 			);
 			path = "Nagaoka-Hanabi-clone";
+			sourceTree = "<group>";
+		};
+		67FB8EBC2D09FB690048994E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67FB8EBD2D09FBBE0048994E /* MainTabController.swift */,
+				67FB8EC72D0A02E60048994E /* HomeController.swift */,
+				67FB8EBF2D09FFCD0048994E /* NewsController.swift */,
+				67FB8EC12D09FFFB0048994E /* PamphletController.swift */,
+				67FB8EC32D0A00410048994E /* NotificationsController.swift */,
+				67FB8EC52D0A00660048994E /* SettingController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +147,6 @@
 			files = (
 				67FB8EB52D09EFA10048994E /* LaunchScreen.storyboard in Resources */,
 				67FB8EB22D09EFA10048994E /* Assets.xcassets in Resources */,
-				67FB8EB02D09EF9C0048994E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +157,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67FB8EAD2D09EF9C0048994E /* ViewController.swift in Sources */,
+				67FB8EC42D0A00410048994E /* NotificationsController.swift in Sources */,
+				67FB8EC02D09FFCD0048994E /* NewsController.swift in Sources */,
+				67FB8EC22D09FFFB0048994E /* PamphletController.swift in Sources */,
 				67FB8EA92D09EF9C0048994E /* AppDelegate.swift in Sources */,
+				67FB8EC82D0A02E60048994E /* HomeController.swift in Sources */,
+				67FB8EBE2D09FBBE0048994E /* MainTabController.swift in Sources */,
 				67FB8EAB2D09EF9C0048994E /* SceneDelegate.swift in Sources */,
+				67FB8EC62D0A00670048994E /* SettingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		67FB8EAE2D09EF9C0048994E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				67FB8EAF2D09EF9C0048994E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		67FB8EB32D09EFA10048994E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +312,6 @@
 				INFOPLIST_FILE = "Nagaoka-Hanabi-clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -322,7 +337,6 @@
 				INFOPLIST_FILE = "Nagaoka-Hanabi-clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
