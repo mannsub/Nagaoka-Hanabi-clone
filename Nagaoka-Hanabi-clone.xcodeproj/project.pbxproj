@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6731ECC42D1506FD0026086A /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 6731ECC32D1506FD0026086A /* Tabman */; };
+		6731ECC62D1530B40026086A /* TabManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6731ECC52D1530B30026086A /* TabManViewController.swift */; };
+		6731ECC82D15311D0026086A /* TopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6731ECC72D15311D0026086A /* TopicController.swift */; };
 		67FB8EA92D09EF9C0048994E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EA82D09EF9C0048994E /* AppDelegate.swift */; };
 		67FB8EAB2D09EF9C0048994E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EAA2D09EF9C0048994E /* SceneDelegate.swift */; };
 		67FB8EB22D09EFA10048994E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67FB8EB12D09EFA10048994E /* Assets.xcassets */; };
@@ -20,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6731ECC52D1530B30026086A /* TabManViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManViewController.swift; sourceTree = "<group>"; };
+		6731ECC72D15311D0026086A /* TopicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicController.swift; sourceTree = "<group>"; };
 		67FB8EA52D09EF9C0048994E /* Nagaoka-Hanabi-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nagaoka-Hanabi-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FB8EA82D09EF9C0048994E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67FB8EAA2D09EF9C0048994E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6731ECC42D1506FD0026086A /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +85,9 @@
 			children = (
 				67FB8EBD2D09FBBE0048994E /* MainTabController.swift */,
 				67FB8EC72D0A02E60048994E /* HomeController.swift */,
+				6731ECC52D1530B30026086A /* TabManViewController.swift */,
 				67FB8EBF2D09FFCD0048994E /* NewsController.swift */,
+				6731ECC72D15311D0026086A /* TopicController.swift */,
 				67FB8EC12D09FFFB0048994E /* PamphletController.swift */,
 				67FB8EC32D0A00410048994E /* NotificationsController.swift */,
 				67FB8EC52D0A00660048994E /* SettingController.swift */,
@@ -103,6 +111,9 @@
 			dependencies = (
 			);
 			name = "Nagaoka-Hanabi-clone";
+			packageProductDependencies = (
+				6731ECC32D1506FD0026086A /* Tabman */,
+			);
 			productName = "Nagaoka-Hanabi-clone";
 			productReference = 67FB8EA52D09EF9C0048994E /* Nagaoka-Hanabi-clone.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +142,9 @@
 				Base,
 			);
 			mainGroup = 67FB8E9C2D09EF9C0048994E;
+			packageReferences = (
+				6731ECC22D1506FD0026086A /* XCRemoteSwiftPackageReference "Tabman" */,
+			);
 			productRefGroup = 67FB8EA62D09EF9C0048994E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67FB8EC42D0A00410048994E /* NotificationsController.swift in Sources */,
+				6731ECC62D1530B40026086A /* TabManViewController.swift in Sources */,
 				67FB8EC02D09FFCD0048994E /* NewsController.swift in Sources */,
+				6731ECC82D15311D0026086A /* TopicController.swift in Sources */,
 				67FB8EC22D09FFFB0048994E /* PamphletController.swift in Sources */,
 				67FB8EA92D09EF9C0048994E /* AppDelegate.swift in Sources */,
 				67FB8EC82D0A02E60048994E /* HomeController.swift in Sources */,
@@ -373,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6731ECC22D1506FD0026086A /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6731ECC32D1506FD0026086A /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6731ECC22D1506FD0026086A /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 67FB8E9D2D09EF9C0048994E /* Project object */;
 }
