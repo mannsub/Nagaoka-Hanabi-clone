@@ -28,11 +28,15 @@ class MainTabController: UITabBarController {
 
         let home = HomeController()
         guard let homeTabImage = UIImage(systemName: "house") else { return }
-        let homeNav = templateNavigationController(image: homeTabImage, rootViewController: home, title: "ホーム")
+        home.tabBarItem.image = homeTabImage
+        home.tabBarItem.title = "ホーム"
 
-        let news = NewsController()
+
+        let news = TabManViewController()
         guard let newsTabImage = UIImage(systemName: "newspaper") else { return }
-        let newsNav = templateNavigationController(image: newsTabImage, rootViewController: news, title: "ニュース")
+        news.tabBarItem.image = newsTabImage
+        news.tabBarItem.title = "ニュース"
+
 
         let pamphlet = PamphletController()
         guard let pamphletTabImage = UIImage(systemName: "menucard") else { return }
@@ -46,7 +50,7 @@ class MainTabController: UITabBarController {
         guard let settingTabImage = UIImage(systemName: "gearshape") else { return }
         let settingNav = templateNavigationController(image: settingTabImage, rootViewController: setting, title: "設定")
 
-        viewControllers = [homeNav, newsNav, pamphletNav, notificationNav, settingNav]
+        viewControllers = [home, news, pamphletNav, notificationNav, settingNav]
 
         uiSetting()
     }

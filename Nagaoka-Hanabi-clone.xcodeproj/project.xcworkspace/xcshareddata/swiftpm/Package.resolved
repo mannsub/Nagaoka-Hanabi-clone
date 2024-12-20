@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "pageboy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uias/Pageboy",
+      "state" : {
+        "revision" : "be0c1f6f1964cfb07f9d819b0863f2c3f255f612",
+        "version" : "4.2.0"
+      }
+    },
+    {
+      "identity" : "tabman",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/uias/Tabman",
+      "state" : {
+        "revision" : "3b2213290eb93e55bb50b49d1a179033005c11ab",
+        "version" : "3.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}
