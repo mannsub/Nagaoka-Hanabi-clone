@@ -10,6 +10,9 @@
 		6731ECC42D1506FD0026086A /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 6731ECC32D1506FD0026086A /* Tabman */; };
 		6731ECC62D1530B40026086A /* TabManViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6731ECC52D1530B30026086A /* TabManViewController.swift */; };
 		6731ECC82D15311D0026086A /* TopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6731ECC72D15311D0026086A /* TopicController.swift */; };
+		6731ECD32D1A59B90026086A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6731ECD22D1A59B90026086A /* Alamofire */; };
+		6731ECD52D1A59B90026086A /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 6731ECD42D1A59B90026086A /* AlamofireDynamic */; };
+		6731ECD82D1A5A060026086A /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 6731ECD72D1A5A060026086A /* SwiftSoup */; };
 		67FB8EA92D09EF9C0048994E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EA82D09EF9C0048994E /* AppDelegate.swift */; };
 		67FB8EAB2D09EF9C0048994E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB8EAA2D09EF9C0048994E /* SceneDelegate.swift */; };
 		67FB8EB22D09EFA10048994E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67FB8EB12D09EFA10048994E /* Assets.xcassets */; };
@@ -45,12 +48,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6731ECC42D1506FD0026086A /* Tabman in Frameworks */,
+				6731ECD82D1A5A060026086A /* SwiftSoup in Frameworks */,
+				6731ECD52D1A59B90026086A /* AlamofireDynamic in Frameworks */,
+				6731ECD32D1A59B90026086A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6731ECD92D1B10900026086A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		67FB8E9C2D09EF9C0048994E = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +83,7 @@
 		67FB8EA72D09EF9C0048994E /* Nagaoka-Hanabi-clone */ = {
 			isa = PBXGroup;
 			children = (
+				6731ECD92D1B10900026086A /* Model */,
 				67FB8EBC2D09FB690048994E /* Controller */,
 				67FB8EA82D09EF9C0048994E /* AppDelegate.swift */,
 				67FB8EAA2D09EF9C0048994E /* SceneDelegate.swift */,
@@ -86,8 +100,8 @@
 				67FB8EBD2D09FBBE0048994E /* MainTabController.swift */,
 				67FB8EC72D0A02E60048994E /* HomeController.swift */,
 				6731ECC52D1530B30026086A /* TabManViewController.swift */,
-				67FB8EBF2D09FFCD0048994E /* NewsController.swift */,
 				6731ECC72D15311D0026086A /* TopicController.swift */,
+				67FB8EBF2D09FFCD0048994E /* NewsController.swift */,
 				67FB8EC12D09FFFB0048994E /* PamphletController.swift */,
 				67FB8EC32D0A00410048994E /* NotificationsController.swift */,
 				67FB8EC52D0A00660048994E /* SettingController.swift */,
@@ -113,6 +127,9 @@
 			name = "Nagaoka-Hanabi-clone";
 			packageProductDependencies = (
 				6731ECC32D1506FD0026086A /* Tabman */,
+				6731ECD22D1A59B90026086A /* Alamofire */,
+				6731ECD42D1A59B90026086A /* AlamofireDynamic */,
+				6731ECD72D1A5A060026086A /* SwiftSoup */,
 			);
 			productName = "Nagaoka-Hanabi-clone";
 			productReference = 67FB8EA52D09EF9C0048994E /* Nagaoka-Hanabi-clone.app */;
@@ -144,6 +161,8 @@
 			mainGroup = 67FB8E9C2D09EF9C0048994E;
 			packageReferences = (
 				6731ECC22D1506FD0026086A /* XCRemoteSwiftPackageReference "Tabman" */,
+				6731ECD12D1A59B90026086A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				6731ECD62D1A5A060026086A /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = 67FB8EA62D09EF9C0048994E /* Products */;
 			projectDirPath = "";
@@ -399,6 +418,22 @@
 				minimumVersion = 3.2.0;
 			};
 		};
+		6731ECD12D1A59B90026086A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		6731ECD62D1A5A060026086A /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.6;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -406,6 +441,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6731ECC22D1506FD0026086A /* XCRemoteSwiftPackageReference "Tabman" */;
 			productName = Tabman;
+		};
+		6731ECD22D1A59B90026086A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6731ECD12D1A59B90026086A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		6731ECD42D1A59B90026086A /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6731ECD12D1A59B90026086A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+		6731ECD72D1A5A060026086A /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6731ECD62D1A5A060026086A /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
